@@ -22,7 +22,7 @@ var employeeSchema = new mongoose.Schema({
 
 //custome validation for email 
 employeeSchema.path('email').validate((val) =>{
-    emailRegex =/^(([^<>()\[\]\\.,;:\s@"j+(\.[^<>()\[\]\\.,;:\s@"])"     ]))
+    
     return emailRegex.test(val);
 });
 
